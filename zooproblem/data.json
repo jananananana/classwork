@@ -1,32 +1,47 @@
 [
     {
         "animal" : "bears",
+        "desc" : "If not friend, why friend shaped?",
         "names" : ["Ollie", "Mona"],
+        "imgalt" : "Bear Pic",
         "imgurl" : "https://www.nps.gov/lacl/learn/nature/images/Image-w-cred-cap_-1200w-_-Brown-Bear-page_-brown-bear-in-fog_2.jpg?maxwidth=1300&maxheight=1300&autorotate=false",
-        "linktext": "Find out more information on bears!"
+        "linktext": "Find out more information on bears!",
+        "linkurl" : "https://en.wikipedia.org/wiki/Bear"
     },
     {
         "animal" : "giraffes",
+        "desc" : "Does long neck get stiff in the morning?",
         "names" : ["Frankie", "Coconut"],
+        "imgalt" : "Giraffe Pic",
         "imgurl" : "https://c02.purpledshub.com/uploads/sites/62/2018/06/GettyImages-524909101-4ccfcfa.jpg?webp=1&w=1200",
-        "linktext": "Find out more information on giraffes!"
+        "linktext": "Find out more information on giraffes!",
+        "linkurl" : "https://en.wikipedia.org/wiki/Giraffe"
     },
     {    
         "animal" : "lions",
+        "desc" : "icanhascheezburger",
         "names" : ["Mella", "Karl"],
+        "imgalt" : "Lion Pic",
         "imgurl" : "https://optimise2.assets-servd.host/maniacal-finch/production/animals/african-lion-01-01.jpg?w=1200&h=1200&auto=compress%2Cformat&fit=crop&dm=1658933674&s=2052be1b4ea7fc7a86d7976091b6a06c",
-        "linktext": "Find out more information on lions!"
+        "linktext": "Find out more information on lions!",
+        "linkurl" : "https://en.wikipedia.org/wiki/Lion"
     },
     {
         "animal" : "monkeys",
+        "desc" : "Monkey see, monkey do!",
         "names" : ["Cookie", "Earl", "Banana Pudding"],
+        "imgalt" : "Monkey Pic",
         "imgurl" : "https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_2240,c_limit/Monkey-Selfie.jpg",
-        "linktext": "Find out more information on monkeys!"
+        "linktext": "Find out more information on monkeys!",
+        "linkurl" : "https://en.wikipedia.org/wiki/Monkey"
     },
     {
         "animal" : "alligators",
+        "desc" : "Modern T-Rex",
         "names" : ["Wren", "Aspen", "Mika"],
+        "imgalt" : "Alligator Pic",
         "imgurl" : "https://www.treehugger.com/thmb/JouyRMnsfs4L3br3DJkFV6X8hio=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/10-b2f827467d3c409285289b7cfa4b7c51.jpg",
-        "linktext": "Find out more information alligators!"
+        "linktext": "Find out more information on alligators!",
+        "linkurl" : "https://en.wikipedia.org/wiki/Alligator"
     }
 ]

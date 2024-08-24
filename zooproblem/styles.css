@@ -2,7 +2,12 @@ body {
     font-size: 16px;
 }
 
-.container {
+.animal-heading {
+    padding: 20px;
+    font-size: 2.3em;
+}
+
+.animal-header {
 
 }
 .content-area {
@@ -11,15 +16,40 @@ body {
 }
 .animal-area {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .animal-card {
+    margin: 20px;
     padding: 1em;
     border: 2px solid black;
+    font-size: 1.5em;
+}
 
+.animal-card__name {
+    margin: 1em auto;
+}
+
+.animal-card__desc {
+    margin-bottom: 0.8em;
+}
+
+.animal-card__desc-title {
+    margin-bottom: 0.8em;
+    font-weight: 800;
 }
 
 .animal-card__heading {
+    margin-bottom: 0.8em;
+    font-size: 1.8em;
     text-transform: capitalize;
+}
+
+.animal-card__pic {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
