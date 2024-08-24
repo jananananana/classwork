@@ -1,7 +1,3 @@
-// Just for the sake of exercise,
-// I'm writing a self invoking function to manipulate the html elements
-
-
 (function main() {
     const getAnimalData = () => {
         return fetch('./Data.json')
@@ -12,7 +8,6 @@
 
     const fillOutAnimals = (data) => {
         createAnimalComponent(data);
-        return console.log(data);
     }
 
     const appendElement = (elemNode, textNode, containerToAppend) => {
