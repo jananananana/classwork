@@ -28,6 +28,12 @@ body {
     margin: 1em auto;
 }
 
+.animal-card__list {
+    padding: 0 1em;
+    display: block;
+    list-style-type: disc;
+}
+
 .animal-card__desc {
     margin-bottom: 0.8em;
 }
