@@ -26,28 +26,37 @@
 
     const createAnimalComponent = (animals) => {
         
-        let elementToAttachTo = document.getElementById("animal-section");
-        
-        animals.forEach(animal => {
-           if (!elementToAttachTo.hasChildNodes()) {
-            // create section element
-            // give it a class
-            // add 
-            // const newElement = document.createElement("section").setAttribute("class", "animal-area");
-            // const newContent = document.createTextNode("Hi there and greetings!");
-            // newElement.appendChild(newContent);
+        const elementToAttachTo = document.getElementById("animal-section");
+        const animalArea = document.getElementById("animals-section");
+ 
 
-            elementToAttachTo = appendElement("section", animal.animal, elementToAttachTo);
+        animals.forEach(animal => {
+ 
+
+            // clone the section and insert it into main
+            const section = animalArea.content.cloneNode(true);
+
+            // grab the h2 and append the title text
+            let h2 = section.querySelectorAll("h2");
+            h2[0].textContent = animal.animal;
+
+            // grab the li, clone it, and loop through names to append list items
+            let ul = section.querySelectorAll("ul");
+
+            // create the list items and pop the names of the animals in
+            for (let i = 0; i < animal.names.length; i++) {
+                ul[0].insertAdjacentHTML("beforeend", '<li>' + animal.names[i] + '</li>');
+            }
+
+            elementToAttachTo.appendChild(section);
+
+
+            // elementToAttachTo = appendElement("section", animal.animal, elementToAttachTo);
             
             // elementToAttachTo.appendChild(newElement);
             // elementToAttachTo = newElement;
             
             
-        } else {
-            //    const currentDiv = document.getElementById("div1");
-            //    document.body.insertBefore(newDiv, currentDiv);
-
-           }
 
 
 

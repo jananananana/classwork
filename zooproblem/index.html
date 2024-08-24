@@ -5,16 +5,30 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Zoo Animals!</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <header>
-        <h1>
-            Zoo Animals
-        </h1>
-    </header>
-    <main id="animal-section"></main>
+    <div class="container">
+        <header class="content-area">
+            <h1>
+                Zoo Animals
+            </h1>
+        </header>
+    </div>
+    <div class="container">
+        <main id="animal-section" class="content-area animal-area"></main>
+    </div>
+    <template id="animals-section">
+        <section class="animal-card">
+            <h2 class="animal-card__heading"></h2>
+            <img src="" alt="">
+            <ul>
+            </ul>
+            <a href=""></a>
+        </section>
+    </template>
 </body>
 
 </html>
