@@ -63,9 +63,6 @@
 
             elementToAttachTo.appendChild(section);
         });
-
-
-        console.log(elementToAttachTo, animals);
     }
 
     getAnimalData();
