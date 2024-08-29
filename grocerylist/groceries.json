@@ -1,0 +1,19 @@
+[
+    {
+        "item" : "Ice Cream",
+        "area" : "Freezer",
+        "type" : "Dessert" 
+
+    },
+    {
+        "item" : "Beans",
+        "area" : "Pantry",
+        "type" : "Dry Goods" 
+    }
+    ,
+    {
+        "item" : "Waffles",
+        "area" : "Freezer",
+        "type" : "Breakfast" 
+    }
+]
