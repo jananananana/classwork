@@ -5,11 +5,80 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Grocery List</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+
     <script src='main.js'></script>
+    <style>
+        body {
+            font-family: 'Roboto';
+            color: #000;
+        }
+    </style>
 </head>
-<body>
-    
-    
+<body style="font-size: 16px;">
+    <div class="page-container">
+        <header class="j-header">
+            <h1 class="j-heading j-header--heading">
+                Grocery List
+            </h1>
+        </header>
+        <template id="grocery-section">
+        </template>
+
+
+
+
+        <main>
+            <ul id="grocery-section-insert">
+                <li class="j-section">
+                    <div class="j-section--heading-container">
+                        <h2 class="j-section--heading j-heading">Sample Grocery Area</h2>
+                    </div>
+                    <div class="j-section--list-container">
+                        <section class="j-mini-list j-section--list-container-item j-section--list-container-item__1">
+                            <h3 class="j-mini-list--heading j-heading">Drinks</h3>
+                            <ol class="j-mini-list__items">
+                                <li class="j-mini-list__item">
+                                    Milk
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="j-mini-list j-section--list-container-item j-section--list-container-item__2">
+                            <h3 class="j-mini-list--heading j-heading">Whatever</h3>
+                            <ol class="j-mini-list__items">
+                                <li class="j-mini-list__item">
+                                    Cheese
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="j-section--list-container-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg/440px-Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg" alt="Ice cream with wafer">
+                        </section>
+                    </div>
+                </li>
+                <li class="j-section">
+                    <div class="j-section--heading-container">
+                        <h2 class="j-section--heading j-heading">Sample Grocery Area</h2>
+                    </div>
+                    <div class="j-section--list-container">
+                        <section class="j-mini-list">
+                            <h3 class="j-mini-list--heading j-heading">Drinks</h3>
+                            <ol class="j-mini-list__items">
+                                <li class="j-mini-list__item">
+                                    Milk
+                                </li>
+                            </ol>
+                        </section>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
 </body>
 </html>
