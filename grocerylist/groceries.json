@@ -1,34 +1,51 @@
 [
     {
         "item" : "Ice Cream",
-        "area" : "Freezer",
-        "type" : "Dessert" 
+        "area" : "dairy",
+        "type" : "Frozen" 
 
     },
     {
         "item" : "Beans",
-        "area" : "Pantry",
+        "area" : "pantry",
         "type" : "Dry Goods" 
     }
     ,
     {
         "item" : "Waffles",
-        "area" : "Freezer",
+        "area" : "dairy",
         "type" : "Breakfast" 
     },
     {
         "item" : "Milk",
-        "area" : "Dairy",
+        "area" : "dairy",
         "type" : "Fresh" 
     },
     {
         "item" : "Cream Cheese",
-        "area" : "Dairy",
+        "area" : "dairy",
         "type" : "Fresh" 
     },
     {
         "item" : "American Cheese",
-        "area" : "Dairy",
+        "area" : "dairy",
+        "type" : "Fresh" 
+    },
+    {
+        "item" : "Ice Cream Cake",
+        "area" : "dairy",
+        "type" : "Frozen" 
+    }
+    ,
+    {
+        "item" : "Ice Cream Cake",
+        "area" : "dairy",
+        "type" : "Frozen" 
+    }
+    ,
+    {
+        "item" : "Apples",
+        "area" : "produce",
         "type" : "Fresh" 
     }
 ]
