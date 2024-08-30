@@ -15,5 +15,20 @@
         "item" : "Waffles",
         "area" : "Freezer",
         "type" : "Breakfast" 
+    },
+    {
+        "item" : "Milk",
+        "area" : "Dairy",
+        "type" : "Fresh" 
+    },
+    {
+        "item" : "Cream Cheese",
+        "area" : "Dairy",
+        "type" : "Fresh" 
+    },
+    {
+        "item" : "American Cheese",
+        "area" : "Dairy",
+        "type" : "Fresh" 
     }
 ]

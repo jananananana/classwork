@@ -3,6 +3,12 @@
         
         const _categorizeGroceries = (data) => {
             let sectionArr = [];
+
+            for (let i = 0; i < data.length; i++) {
+                const element = data[i];
+                
+            }
+
             return console.log(data);
         }
         
