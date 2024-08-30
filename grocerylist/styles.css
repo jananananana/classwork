@@ -63,12 +63,13 @@
 
 .j-section--list-container {
     display: grid;
-    grid-template-columns: 30% 30% 40%;
+    grid-template-columns: 30% 30% auto;
     gap: 10px 20px;
     overflow: hidden;
 }
 .j-section--list-container-item {
     grid-column-start: 3;
+    border: 2px solid var(--wine-color);
 }
 
 .j-section--list-container-item__1 {
@@ -79,7 +80,8 @@
     grid-column-start: 2;
 }
 .j-section--list-image {
-    width: 100%;
+    padding: 5px;
+    width: calc(100% - 10px);
 }
 
 
