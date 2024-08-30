@@ -2,6 +2,7 @@
     const appFunctions = (function() {
         
         const _categorizeGroceries = (data) => {
+            let sectionArr = [];
             return console.log(data);
         }
         
