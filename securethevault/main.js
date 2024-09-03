@@ -10,8 +10,42 @@
     // 8. Attach event listener to close dialog close button
     
     const appFunctions = (function() {
+        
+        // seperate the business logic from the UI
         const _returnVaultCode = () => {
-            return console.log("hi");
+        
+            // wait for the dom to finish loading
+
+            document.addEventListener('DOMContentLoaded', (event) => {
+                _setVaultCombo();
+
+                const theVaultButton = document.getElementById('secureTheVault');
+
+                theVaultButton?.addEventListener('click' , _toggleDialogWithCode);
+                event.stopPropagation();
+            });
+        }
+
+        // this is where the magic happens and the code is set - "business logic"
+        const _setVaultCombo = () => {
+            const firstnum = 2*10,
+                  secondnum = Math.ceil(39.8),
+                  thirdnum = 40 - 1
+                  fullcode = `The code is  ${firstnum} - ${secondnum} - ${thirdnum}!`;
+            
+            document.getElementById('theCode').append(fullcode);
+
+        }
+
+        // here we wait for the click
+        const _toggleDialogWithCode = () => {
+            const dialog = document.getElementById('vaultDialog');
+
+            if(dialog.open) {
+                dialog.close();
+            } else {
+                dialog.showModal();
+            }
         }
 
         const _init = () => {

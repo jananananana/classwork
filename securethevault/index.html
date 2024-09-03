@@ -22,9 +22,19 @@
             You have received this message because you have been chosen to open an important vault. Here is the secret combination:
         </p>
         <div>
-            <button id="secureTheVault">Get secret Code!</button>
+            <button id="secureTheVault">Get secret code!</button>
         </div>
     </main>
+    <dialog id="vaultDialog">
+        <form method="dialog">
+            <button aria-label="close" formnovalidate>X</button>
+            <!-- autofocus attribute added for accessibility -->
+            <h2 autofocus>Code Here</h2>
+            <!-- autofocus attribute added for accessibility -->
+            <p id="theCode"></p>
+            <button aria-label="close" formnovalidate>Close</button>
+        </form>
+    </dialog>
     
 </body>
 </html>
