@@ -5,11 +5,7 @@
 :root {
     --blackish-color: #121212;
     --coral-color: #DC3346;
-    --orange-color: #E4844A;
-    --yellow-ochre-color: #E8BF56;
-    --light-green-color: #E2F7CE;
     --white-color: #fff;
-    --bottom-margin: 20px;
     --normal-font: "Roboto", sans-serif;
     --secret-font: "Handjet", sans-serif;
 }
