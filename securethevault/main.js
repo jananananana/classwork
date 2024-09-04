@@ -14,16 +14,28 @@
         // seperate the business logic from the UI
         const _returnVaultCode = () => {
         
-            // wait for the dom to finish loading
-
+            // wait for the dom to finish loading because I chose to not move this file to the bottom
             document.addEventListener('DOMContentLoaded', (event) => {
                 _setVaultCombo();
 
                 const theVaultButton = document.getElementById('secureTheVault');
 
+                // If the button isn't there don't error out
                 theVaultButton?.addEventListener('click' , _toggleDialogWithCode);
+                // No need for this to bubble up, nothing else needs to use this click
                 event.stopPropagation();
             });
+        }
+
+        // dialog opening and closing logic
+        const _toggleDialogWithCode = () => {
+            const dialog = document.getElementById('vaultDialog');
+
+            if(dialog.open) {
+                dialog.close();
+            } else {
+                dialog.showModal();
+            }
         }
 
         // this is where the magic happens and the code is set - "business logic"
@@ -35,17 +47,6 @@
             
             document.getElementById('theCode').append(fullcode);
 
-        }
-
-        // here we wait for the click
-        const _toggleDialogWithCode = () => {
-            const dialog = document.getElementById('vaultDialog');
-
-            if(dialog.open) {
-                dialog.close();
-            } else {
-                dialog.showModal();
-            }
         }
 
         const _init = () => {

@@ -1,0 +1,96 @@
+/*********************/
+/*** Root / Page Styles ***/
+/*********************/
+
+:root {
+    --blackish-color: #121212;
+    --coral-color: #DC3346;
+    --orange-color: #E4844A;
+    --yellow-ochre-color: #E8BF56;
+    --light-green-color: #E2F7CE;
+    --white-color: #fff;
+    --bottom-margin: 20px;
+    --normal-font: "Roboto", sans-serif;
+    --secret-font: "Handjet", sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--normal-font);
+    background-color: var(--blackish-color);
+    color: var(--white-color);
+}
+
+/*********************/
+/*** Heading Styles ***/
+/*********************/
+
+.j-heading {
+    font-family: var(--secret-font);
+}
+
+.j-heading--1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.j-heading--2 {
+    font-size: 2em;
+}
+
+/*********************/
+/*** Component Styles ***/
+/*********************/
+
+.j-button {
+    padding: 0.8em 1em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: var(--white-color);
+    background-color: #ff5f6d;
+}
+
+.j-simple-button {
+    appearance: none;
+    border: none;
+    font-size: 1.4rem;
+    background-color: inherit;
+}
+
+.j-dialog {
+    padding: 0;
+}
+.j-dialog__header {
+    position: relative;
+    height: 40px;
+}
+.j-dialog__header-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.j-dialog__inner {
+    padding: 0 30px;
+}
+.j-dialog__content {
+    margin: 20px 0;
+}
+.j-dialog__footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/*********************/
+/*** Layout Styles ***/
+/*********************/
+
+.j-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.j-header {
+    padding: 40px 0;
+    text-align: center;
+}
