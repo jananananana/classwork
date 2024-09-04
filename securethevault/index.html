@@ -19,17 +19,19 @@
                 Securing the Vault
             </h1>
         </header>
-        <main>
-            <h2 class="j-heading j-heading--2">
+        <main class="j-main-content">
+            <h2 class="j-heading j-heading--2 j-main-content__item">
                 Are you ready to secure the vault?
             </h2>
-            <p>
+            <p class="j-main-content__item">
                 You have received this message because you have been chosen to open an important vault. Here is the secret combination:
             </p>
             <div>
                 <button id="secureTheVault" class="j-button">Get secret code!</button>
             </div>
         </main>
+
+        <!-- Dialog Section That's Hidden -->
         <dialog id="vaultDialog" class="j-dialog">
             <form method="dialog">
                 <header class="j-dialog__header">
@@ -39,7 +41,7 @@
                 <section class="j-dialog__inner">
                     <!-- autofocus attribute added for accessibility -->
                     <h2 class="j-heading j-heading--2" autofocus>Secret Code</h2>
-                    <p id="theCode" class="j-dialog__content"></p>
+                    <p id="theCode" class="j-dialog__content "></p>
                 </section>
                 <footer class="j-dialog__footer j-dialog__inner">
                         <button  class="j-button" aria-label="close" formnovalidate>Close</button>

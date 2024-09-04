@@ -94,3 +94,11 @@ body {
     padding: 40px 0;
     text-align: center;
 }
+
+.j-main-content {
+    text-align: center;
+}
+
+.j-main-content__item {
+    margin-bottom: 40px;
+}
