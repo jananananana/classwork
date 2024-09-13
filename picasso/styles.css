@@ -113,37 +113,39 @@ body {
     "cloud1 cloud1 "
     "cloud4 cloud4 "
     "people mountain"
-    "footer footer    ";
+    "grass grass";
 }
 @media (min-width: 480px) {
     .j-gallery-image {
         position: relative;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        grid-template-rows: repeat(5, 150px);
+        grid-template-rows: 150px 200px 120px 120px 15px;
         grid-template-areas: 
         "cloud1 cloud1 cloud2 cloud2"
         "cloud4 cloud4 cloud4 cloud4"
         "people people mountain mountain"
-        "footer footer footer footer";
+        "grass grass grass grass";
     }
 }
 
 @media (min-width: 1024px) {
     .j-gallery-image {
         grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-template-rows: repeat(5, 200px);
+        grid-template-rows: 200px 300px 150px 150px 20px;
         grid-template-areas: 
         "cloud1 cloud1 cloud2 cloud2 cloud3 cloud3"
         "cloud4 cloud4 cloud4 cloud4 cloud4 cloud4"
         "people people people mountain mountain mountain"
-        "footer footer footer footer footer footer";
+        "grass grass grass grass grass grass";
     }
 }
 
 .j-cloud {
-    background-color: var(--teal-color);
+    position: relative;
     grid-column-start: span 2;
     align-self: stretch;
+    background-color: var(--teal-color);
+    z-index: 0;
 }
 
 
@@ -177,16 +179,57 @@ body {
 
 /* People */
 .j-person-svg {
-    grid-template-areas: people;
+    position: relative;
+    grid-area: people;
     display: flex;
+    z-index: 30;
 
 }
 .person {
     fill: var(--light-teal-color);
 }
-.person:nth-last-child(-n+3) {
+.person:nth-last-child(-n+9) {
     fill: var(--dark-gray-color);
 }
+.person:nth-last-child(-n+8) {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .person:nth-last-child(-n+8) {
+        display: block;
+        fill: var(--light-teal-color);
+    }
+    .person:nth-last-child(-n+6) {
+        display: block;
+        fill: var(--dark-gray-color);
+    }
+    .person:nth-last-child(-n+3) {
+        display:none;
+    }
+}
+@media (min-width: 1024px) {
+    .person {
+        display: block;
+    }
+    .person:nth-last-child(-n+6) {
+        display: block;
+        fill: var(--light-teal-color);
+    }
+    .person:nth-last-child(-n+3) {
+        display: block;
+        fill: var(--dark-gray-color);
+    }
+}
+.grass {
+    position: relative;
+    grid-area: grass;
+    background-color: var(--light-green-color);
+    z-index: 0;
+}
+
+
+
 
 
 /* Form */
