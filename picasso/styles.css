@@ -107,10 +107,11 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(5, 100px);
+    grid-template-rows: 100px 150px 100px 5px 10px;
     gap: max(1vw, 1em, 1rem);
     grid-template-areas: 
     "cloud1 cloud1 "
+    "cloud4 cloud4 "
     "cloud4 cloud4 "
     "people mountain"
     "grass grass";
@@ -119,9 +120,10 @@ body {
     .j-gallery-image {
         position: relative;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        grid-template-rows: 150px 200px 120px 120px 15px;
+        grid-template-rows: 150px 200px 120px 8px 15px;
         grid-template-areas: 
         "cloud1 cloud1 cloud2 cloud2"
+        "cloud4 cloud4 cloud4 cloud4"
         "cloud4 cloud4 cloud4 cloud4"
         "people people mountain mountain"
         "grass grass grass grass";
@@ -131,9 +133,10 @@ body {
 @media (min-width: 1024px) {
     .j-gallery-image {
         grid-template-columns: repeat(6, minmax(0, 1fr));
-        grid-template-rows: 200px 300px 150px 150px 20px;
+        grid-template-rows: 200px 300px 150px 10px 20px;
         grid-template-areas: 
         "cloud1 cloud1 cloud2 cloud2 cloud3 cloud3"
+        "cloud4 cloud4 cloud4 cloud4 cloud4 cloud4"
         "cloud4 cloud4 cloud4 cloud4 cloud4 cloud4"
         "people people people mountain mountain mountain"
         "grass grass grass grass grass grass";
@@ -182,6 +185,8 @@ body {
     position: relative;
     grid-area: people;
     display: flex;
+    grid-row-start: 3;
+    grid-row-end: span 2;
     z-index: 30;
 
 }
@@ -196,12 +201,11 @@ body {
 }
 
 @media (min-width: 480px) {
-    .person:nth-last-child(-n+8) {
+    .person:nth-last-child(-n+9) {
         display: block;
         fill: var(--light-teal-color);
     }
     .person:nth-last-child(-n+6) {
-        display: block;
         fill: var(--dark-gray-color);
     }
     .person:nth-last-child(-n+3) {
@@ -209,15 +213,12 @@ body {
     }
 }
 @media (min-width: 1024px) {
-    .person {
-        display: block;
-    }
     .person:nth-last-child(-n+6) {
         display: block;
         fill: var(--light-teal-color);
     }
-    .person:nth-last-child(-n+3) {
-        display: block;
+    .person:nth-last-child(-n+4) {
+
         fill: var(--dark-gray-color);
     }
 }
